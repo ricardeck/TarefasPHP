@@ -1,0 +1,28 @@
+CREATE DATABASE apptarefas;
+
+CREATE table tarefas (
+    id_tarefas int AUTO_INCREMENT,
+    desctarefa varchar(200) not null,
+    dataexectarefa date,
+    datacriacao date not null,
+	PRIMARY KEY(id_tarefas));
+
+
+CREATE TABLE usuarios (
+    id_usuario int AUTO_INCREMENT,
+    login varchar(200) not null,
+    password varchar(200) not null,
+    PRIMARY KEY(id_usuario));
+
+
+INSERT INTO `tarefas`( `desctarefa`, `datacriacao`) VALUES
+('Pão','2019-11-17'),
+('Manteiga','2019-11-17'),
+('Sal','2019-11-17'),
+('Açucar','2019-11-17'),
+('Água','2019-11-17'),
+('Sabão','2019-11-17');
+
+INSERT INTO `usuarios`( `login`, `password`) VALUES
+('admin','21232f297a57a5a743894a0e4a801fc3');
+
